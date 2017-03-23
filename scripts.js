@@ -2,28 +2,28 @@
 	
     $(document).ready(function () {
 		
-		var form = $("form"),
-			input = $("input"),
-			button = $("button"),
-			list = $("<ul></ul>").insertAfter(form);
+	var form = $("form"),
+	    input = $("input"),
+	    button = $("button"),
+	    list = $("<ul></ul>").insertAfter(form);
 			
 
         form.on("submit",function(e){
 		   
-			e.preventDefault();
+	    e.preventDefault();
 		   
-			var textValue = $.trim(input.val());
+	    var textValue = $.trim(input.val());
 		   
-			if(textValue !== ""){
+	    if(textValue !== ""){
 				
-				list.append("<li>"+textValue+"</li>");
-			};
+		list.append("<li>"+textValue+"</li>");
+	    };
 			
-			input.val(''); 
+	    input.val(''); 
 		   
-	   });
-	   
 	});
+	   
+    });
 
 
 	
